@@ -72,7 +72,6 @@ const gameover = () => {
 };
 
 const generateApple = () => {
-  score++;
   const [x, y] = [
     Math.trunc(Math.random() * 19),
     Math.trunc(Math.random() * 19),
@@ -82,6 +81,7 @@ const generateApple = () => {
       return generateApple();
     }
   }
+  score++;
   apple = [x, y];
 };
 
